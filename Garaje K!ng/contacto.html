@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contacta a K!ngs Elite Motors. Estamos listos para ayudarte a encontrar el auto de tus sueños.">
+    <title>Contacto | K!ngs Elite Motors</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="contacto.css">
+<base target="_blank">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="logo">
+            <img src="logo.png" alt="K!ngs Elite Motors Logo">
+            <h1>K!ngs Elite</h1>
+        </div>
+        <nav>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <!-- CONTACT HERO -->
+    <section class="contact-hero">
+        <div class="about-hero-content">
+            <span class="section-label">Estamos Aquí</span>
+            <h1>Contácta<span>nos</span></h1>
+            <div class="section-line" style="margin: 20px auto 0;"></div>
+            <p class="section-description" style="margin-top: 20px;">
+                ¿Listo para dar el siguiente paso? Estamos a un mensaje de distancia.
+            </p>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="section contact-section">
+        <div class="contact-grid">
+            <!-- Contact Info -->
+            <div class="contact-info fade-in">
+                <h2>Información de <span>Contacto</span></h2>
+                <p>
+                    Visítanos en nuestro showroom, llámanos o envíanos un mensaje. 
+                    Nuestro equipo está listo para atenderte y ayudarte a encontrar el vehículo perfecto.
+                </p>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <div>
+                        <h4>Dirección</h4>
+                        <p>Av. Paseo de la Reforma 1234, Col. Juárez<br>Ciudad de México, CDMX 06600</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <div>
+                        <h4>Teléfono</h4>
+                        <p><a href="tel:+525512345678">+52 (55) 1234-5678</a></p>
+                        <p><a href="tel:+525598765432">+52 (55) 9876-5432</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <div>
+                        <h4>Email</h4>
+                        <p><a href="mailto:info@kingselite.com">info@kingselite.com</a></p>
+                        <p><a href="mailto:ventas@kingselite.com">ventas@kingselite.com</a></p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">🕐</div>
+                    <div>
+                        <h4>Horario de Atención</h4>
+                        <p>Lunes - Viernes: 9:00 AM - 7:00 PM</p>
+                        <p>Sábado: 10:00 AM - 6:00 PM</p>
+                        <p>Domingo: Cerrado</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/525512345678" target="_blank">+52 (55) 1234-5678</a></p>
+                        <p style="color: var(--gold); font-size: 0.85rem;">Respuesta en menos de 30 min</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Contact Form -->
+            <div class="contact-form-wrapper fade-in">
+                <h3>Envíanos un Mensaje</h3>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="nombre">Nombre</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="apellido">Apellido</label>
+                            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Correo Electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono</label>
+                            <input type="tel" id="telefono" name="telefono" placeholder="+52 (55) 0000-0000">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="interes">¿Qué te interesa?</label>
+                        <select id="interes" name="interes" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="compra">Comprar un vehículo</option>
+                            <option value="venta">Vender mi vehículo</option>
+                            <option value="servicio">Servicio técnico</option>
+                            <option value="financiamiento">Financiamiento</option>
+                            <option value="prueba">Agendar prueba de manejo</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Cuéntanos en qué podemos ayudarte..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">
+                        Enviar Mensaje
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAP SECTION -->
+    <section class="map-section">
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.546!2d-99.165!3d19.427!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDI1JzM3LjIiTiA5OcKwMDknNTQuMCJX!5e0!3m2!1ses!2smx!4v1"
+                width="100%" 
+                height="100%" 
+                style="border:0; filter: invert(90%) hue-rotate(180deg);" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section" style="background: var(--black-light);">
+        <div class="section-header fade-in">
+            <span class="section-label">Preguntas Frecuentes</span>
+            <h2 class="section-title">Preguntas <span>Comunes</span></h2>
+            <div class="section-line"></div>
+        </div>
+        <div class="testimonials-grid">
+            <div class="testimonial-card fade-in">
+                <h3 style="color: var(--gold); margin-bottom: 15px; font-size: 1.1rem;">¿Ofrecen financiamiento?</h3>
+                <p style="color: var(--gray); line-height: 1.8;">
+                    Sí, contamos con múltiples opciones de financiamiento a través de las principales 
+                    instituciones bancarias. Nuestros asesores te ayudarán a encontrar el plan que 
+                    mejor se adapte a tu presupuesto.
+                </p>
+            </div>
+            <div class="testimonial-card fade-in">
+                <h3 style="color: var(--gold); margin-bottom: 15px; font-size: 1.1rem;">¿Puedo agendar una prueba de manejo?</h3>
+                <p style="color: var(--gray); line-height: 1.8;">
+                    ¡Por supuesto! Puedes agendar tu prueba de manejo directamente desde este formulario 
+                    o llamándonos. Solo necesitas tu licencia de conducir vigente y una identificación oficial.
+                </p>
+            </div>
+            <div class="testimonial-card fade-in">
+                <h3 style="color: var(--gold); margin-bottom: 15px; font-size: 1.1rem;">¿Qué garantía ofrecen?</h3>
+                <p style="color: var(--gray); line-height: 1.8;">
+                    Todos nuestros vehículos nuevos incluyen la garantía del fabricante. Para autos 
+                    seminuevos, ofrecemos garantía extendida de hasta 2 años que cubre motor, 
+                    transmisión y sistema eléctrico.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <img src="logo.png" alt="K!ngs Elite Motors">
+                <p>
+                    K!ngs Elite Motors es tu destino para vehículos de lujo. 
+                    Comprometidos con la excelencia y la satisfacción total de nuestros clientes.
+                </p>
+                <div class="footer-social">
+                    <a href="#" class="social-link" aria-label="Facebook">f</a>
+                    <a href="#" class="social-link" aria-label="Instagram">📷</a>
+                    <a href="#" class="social-link" aria-label="Twitter">𝕏</a>
+                    <a href="#" class="social-link" aria-label="WhatsApp">📱</a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h4>Navegación</h4>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Servicios</h4>
+                <ul>
+                    <li><a href="#">Venta de Autos</a></li>
+                    <li><a href="#">Servicio Técnico</a></li>
+                    <li><a href="#">Financiamiento</a></li>
+                    <li><a href="#">Garantía</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contacto</h4>
+                <ul>
+                    <li>📍 Av. Reforma 1234, CDMX</li>
+                    <li>📞 +52 (55) 1234-5678</li>
+                    <li>✉️ info@kingselite.com</li>
+                    <li>🕐 Lun - Sáb: 9:00 - 19:00</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 K!ngs Elite Motors. Todos los derechos reservados. | Diseñado con <span>♥</span> para la élite.</p>
+        </div>
+    </footer>
+
+    <!-- SCRIPTS -->
+    <script>
+        // Header scroll effect
+        const header = document.getElementById('header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Mobile menu toggle
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navLinks.classList.remove('active');
+            });
+        });
+
+        // Fade-in animation
+        const fadeElements = document.querySelectorAll('.fade-in');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100);
+                }
+            });
+        }, { threshold: 0.1 });
+        fadeElements.forEach(el => observer.observe(el));
+
+        // Form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('¡Gracias por contactarnos! Hemos recibido tu mensaje y te responderemos en menos de 24 horas.');
+            this.reset();
+        });
+    </script>
+
+</body>
+</html>

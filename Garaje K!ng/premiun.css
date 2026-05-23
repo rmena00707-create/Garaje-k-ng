@@ -1,0 +1,120 @@
+/* CONFIGURACIÓN GENERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+        url("imagenes/fondo-premium.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* SECCIÓN PREMIUM */
+
+.garaje-premium{
+    padding: 60px;
+    text-align: center;
+}
+
+.garaje-premium h2{
+    font-size: 45px;
+    color: #FFD700;
+    margin-bottom: 35px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-shadow: 0 0 15px rgba(255,215,0,0.7);
+}
+
+/* GRID DE AUTOS */
+
+.autos-premium{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* TARJETAS */
+
+.auto-premium{
+    background: rgba(17,17,17,0.95);
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: 0.4s;
+    backdrop-filter: blur(5px);
+}
+
+.auto-premium:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(255,215,0,0.7);
+}
+
+.auto-premium img{
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.auto-premium h3{
+    color: #FFD700;
+    margin: 15px 0 10px;
+    font-size: 24px;
+}
+
+.auto-premium p{
+    color: white;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN */
+
+.btn-comprar{
+    display: inline-block;
+    margin-bottom: 20px;
+    padding: 12px 30px;
+    background: linear-gradient(135deg, #FFD700, #ffb700);
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(255,215,0,0.4);
+}
+
+.btn-comprar:hover{
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(255,215,0,0.7);
+}
+
+.btn-comprar:active{
+    transform: translateY(1px);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px){
+
+    .garaje-premium{
+        padding: 30px;
+    }
+
+    .garaje-premium h2{
+        font-size: 35px;
+    }
+
+    .autos-premium{
+        grid-template-columns: 1fr;
+    }
+}
